@@ -1,0 +1,343 @@
+body * {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #4e4e4e;
+  margin: 0 40px 0 40px;
+}
+
+.root {
+  display: block;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+/* Cabeçalho [Início] */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 40px 0 40px;
+
+  background: #dead00;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.logoTitulo {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+
+  text-transform: uppercase;
+}
+
+.contatos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+
+  font-weight: 700;
+}
+
+.contatos ul {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  gap: 5px;
+}
+
+.contatos p {
+  font-size: 12px;
+}
+/* Cabeçalho [Fim] */
+
+/* Menu de navegação [Início] */
+.menu {
+  display: flex;
+  justify-content: flex-end; /* Analisar */
+  align-items: center;
+  padding-right: 50px;
+
+  height: 35px;
+
+  background: #252525;
+}
+
+.menu ul {
+  display: flex;
+  gap: 5px;
+}
+
+.menu li {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+
+  color: #dead00;
+}
+/* Menu de navegação [Fim] */
+
+/* Início [Início] */
+#inicio {
+  display: flex;
+  flex-direction: column;
+}
+
+.slide {
+  max-width: 1366px;
+}
+
+.boxItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 110px;
+
+  background: #646262;
+}
+
+.container {
+  display: flex;
+  gap: 60px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  filter: drop-shadow(0px 4px 4px #00000040);
+}
+
+.item h1 {
+  font-size: 25px;
+}
+
+.item p {
+  font-size: 15px;
+}
+/* Início [Fim] */
+
+/* Nosso Programa [Início] */
+#programa {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+
+  padding: 160px;
+
+  height: 768px;
+
+  background: #f2f2f2;
+}
+
+.titlePrograma {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 10px;
+
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #252525;
+  filter: drop-shadow(0px 4px 4px #00000040);
+}
+
+/* Expanding Cards [Início] */
+.expandingCards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel {
+  height: 400px;
+
+  margin: 10px;
+  border-radius: 20px;
+
+  flex: 1;
+  transition: all 0.5s linear;
+  filter: grayscale(1);
+
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.active {
+  /* flex: 6;  */
+  flex: 400px;
+  filter: grayscale(0);
+}
+
+#panel-1 {
+  background-image: url(../assets/images/card-01.svg);
+}
+#panel-2 {
+  background-image: url(../assets/images/card-01.svg);
+}
+#panel-3 {
+  background-image: url(../assets/images/card-01.svg);
+}
+#panel-4 {
+  background-image: url(../assets/images/card-01.svg);
+}
+#panel-5 {
+  background-image: url(../assets/images/card-01.svg);
+}
+#panel-6 {
+  background-image: url(../assets/images/card-01.svg);
+}
+/* Expanding Cards [Fim] */
+/* Nosso Programa [Fim] */
+
+/* Quem Somos [Início] */
+#quemSomos {
+  display: flex;
+  gap: 50px;
+
+  padding: 160px 60px 160px 160px;
+
+  height: 768px;
+  background: #fff;
+}
+
+.containerQs-left {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  margin-left: 10px;
+}
+
+.titleQuemsomos {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #252525;
+  filter: drop-shadow(0px 4px 4px #00000040);
+}
+
+.textQuemsomos {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: justify;
+}
+
+.losangos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.losango {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.losango h2 {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.losango p {
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.containerQs-right {
+  display: flex;
+}
+/* Quem Somos [Fim] */
+
+#contato {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px 0 50px;
+
+  height: 176px;
+  background: #dead00;
+
+  font-weight: 700;
+  text-shadow: 0px 4px 4px #00000040;
+}
+
+.containerContato-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35px;
+}
+
+.faleConosco li {
+  display: flex;
+  align-items: center;
+
+  font-size: 23px;
+}
+
+.faleConosco img {
+  height: 40px;
+}
+
+.contatosBottom ul {
+  display: flex;
+  flex-direction: column;
+
+  
+  font-size: 15px;
+}
+
+.contatosBottom li {
+  display: flex;
+}
+
+.atendimento p {
+  font-size: 20px;
+  text-align: center;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 30px;
+  background: #000;
+
+  font-size: 11px;
+  font-weight: 400;
+  color: #fff;
+}

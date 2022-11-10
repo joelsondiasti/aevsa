@@ -344,3 +344,49 @@ h2 {
 	font-weight: 400;
 	color: #fff;
 }
+
+.floatButtomWhatsApp {
+	position:fixed;
+
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+
+	border-radius:50px;
+
+	text-align:center;
+  font-size:30px;
+	color:#FFF;
+
+	background-color:#25d366;
+	filter: drop-shadow(0px 4px 4px #00000040);
+  z-index:100;
+}
+
+.floatWhatsApp {
+	margin-top:16px;
+}
+
+.floatButtomArrow {
+	position:fixed;
+
+	width:60px;
+	height:60px;
+	bottom:140px;
+	right:40px;
+
+	border-radius:50px;
+	font-size:30px;
+	text-align:center;
+	color:#252525;
+
+	background-color:#dead00;
+	filter: drop-shadow(0px 4px 4px #00000040);
+  z-index:100;
+}
+
+.floatArrow i {
+	padding-top: 20px;
+	font-size: 20px;
+}

@@ -5,26 +5,29 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="shortcut icon" href="images/logo.svg" type="image/x-icon" />
-		<link
-			rel="stylesheet"
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
-		/>
+
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/carousel.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link
+		rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+	/>
 		<title>CFC - Vila Santo Antônio</title>
 	</head>
 	<body>
 		<div class="root">
 			<div id="header">
+				<div class="logoTitulo">
+					<img class="logo" src="assets/images/logo.svg" />
+				</div>
 				<header>
-					<div class="logoTitulo">
-						<img class="logo" src="assets/images/logo.svg" />
-						<div class="titulo">
-							<h2>Centro de Formação de Condutores</h2>
-							<h1>Vila Santo Antônio</h1>
-						</div>
+					<div class="titulo">
+						<h2>Centro de Formação de Condutores</h2>
+						<h1>Vila Santo Antônio</h1>
 					</div>
+
 					<div class="contatos">
 						<ul>
 							<img src="assets/images/whatsapp.svg" />
@@ -52,7 +55,30 @@
 			</div>
 
 			<div id="inicio">
-				<img class="slide" src="assets/images/slide.svg" />
+				<div class="slideshow-container">
+					<div class="slideshow-inner">
+						<div class="slide">
+							<img src="./assets/images/slide.svg"/>
+						</div>
+						<div class="slide">
+							<img src="https://images.unsplash.com/photo-1553782097-130fef5d3e27?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"/>
+						</div>
+						<div class="slide">
+							<img src="https://images.unsplash.com/photo-1478442231640-a78bbd3bcd62?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"/>
+						</div>
+						<div class="slide">
+							<img src="https://images.unsplash.com/photo-1578041262130-633307b3bfd6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"/>
+						</div>
+					</div>
+					<a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+					<a class="next" onclick='plusSlides(1)'>&#10095;</a>
+					<div class="dot-container">
+						<span class="dot" onclick='currentSlide(1)'></span>
+						<span class="dot" onclick='currentSlide(2)'></span>
+						<span class="dot" onclick='currentSlide(3)'></span>
+						<span class="dot" onclick='currentSlide(4)'></span>
+					</div>
+				</div>
 				<div class="boxItem">
 					<div class="container">
 						<div class="item">
@@ -214,13 +240,15 @@
 				</p>
 			</div>
 
-			<a href="https://api.whatsapp.com/send?phone=5521999999999&text=Ol%C3%A1%2C%20gostaria%20de%20receber%20informa%C3%A7%C3%B5es!" class="floatButtomWhatsApp" >
-				<i class="fa fa-whatsapp floatWhatsApp"></i>
-			</a>
+			<div id="floatButton">
+				<a href="https://api.whatsapp.com/send?phone=5521971515281&text=Ol%C3%A1%2C%20gostaria%20de%20receber%20informa%C3%A7%C3%B5es!" class="floatButtomWhatsApp" >
+					<i class="fa fa-whatsapp floatWhatsApp"></i>
+				</a>
 
-			<a href="#header" class="floatArrow">
-				<i class="fa fa-arrow-up floatButtomArrow"></i>
-			</a>
+				<a href="#header" class="floatArrow">
+					<i class="fa fa-arrow-up floatButtomArrow"></i>
+				</a>
+			</div>
 
 		</div>
 		<script src="js/main.js"></script>

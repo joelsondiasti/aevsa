@@ -8,40 +8,40 @@
 
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/styles.css" />
-		<link rel="stylesheet" href="css/carousel.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/carousel.css" />
 		<link
-		rel="stylesheet"
-		href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
-	/>
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+		/>
 		<title>CFC - Vila Santo Antônio</title>
 	</head>
 	<body>
-		<div class="root">
-			<div id="header">
-				<div class="logoTitulo">
-					<img class="logo" src="assets/images/logo.svg" />
-				</div>
-				<header>
-					<div class="titulo">
-						<h2>Centro de Formação de Condutores</h2>
-						<h1>Vila Santo Antônio</h1>
-					</div>
+		<header>
+			<div id="headerTop" class="container">
+				<img class="logo" src="assets/images/logo.svg" />
 
-					<div class="contatos">
-						<ul>
-							<img src="assets/images/whatsapp.svg" />
-							<li>21 99999-9999</li>
-							<img src="assets/images/phone.svg" />
-							<li>21 2772-4214</li>
-						</ul>
-						<p>Av. Duque de Caxias, 420 - Parque Paulicéia, Duque de Caxias</p>
-					</div>
-				</header>
+				<div class="titulo">
+					<h2>Centro de Formação de Condutores</h2>
+					<h1>Vila Santo Antônio</h1>
+				</div>
+
+				<div class="contatos">
+					<ul>
+						<img src="assets/images/whatsapp.svg" />
+						<li>21 99999-9999</li>
+						<img src="assets/images/phone.svg" />
+						<li>21 2772-4214</li>
+					</ul>
+					<p>Av. Duque de Caxias, 420 - Parque Paulicéia, Duque de Caxias</p>
+				</div>
 			</div>
 
 			<div id="menu">
-				<nav class="menu">
+				<nav class="container">
 					<ul>
 						<li><a href="#header">Início</a></li>
 						<li>|</li>
@@ -53,204 +53,211 @@
 					</ul>
 				</nav>
 			</div>
+		</header>
 
-			<div id="inicio">
-				<div class="slideshow-container">
-					<div class="slideshow-inner">
-						<div class="slide">
-							<img src="./assets/images/slide.svg"/>
-						</div>
-						<div class="slide">
-							<img src="https://images.unsplash.com/photo-1553782097-130fef5d3e27?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"/>
-						</div>
-						<div class="slide">
-							<img src="https://images.unsplash.com/photo-1478442231640-a78bbd3bcd62?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"/>
-						</div>
-						<div class="slide">
-							<img src="https://images.unsplash.com/photo-1578041262130-633307b3bfd6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"/>
-						</div>
+		<div id="inicio">
+			<div class="slideshow-container">
+				<div class="slideshow-inner">
+					<div class="slide">
+						<img src="./assets/images/slide.svg" />
 					</div>
-					<a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
-					<a class="next" onclick='plusSlides(1)'>&#10095;</a>
-					<div class="dot-container">
-						<span class="dot" onclick='currentSlide(1)'></span>
-						<span class="dot" onclick='currentSlide(2)'></span>
-						<span class="dot" onclick='currentSlide(3)'></span>
-						<span class="dot" onclick='currentSlide(4)'></span>
+					<div class="slide">
+						<img
+							src="https://images.unsplash.com/photo-1553782097-130fef5d3e27?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"
+						/>
+					</div>
+					<div class="slide">
+						<img
+							src="https://images.unsplash.com/photo-1478442231640-a78bbd3bcd62?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+						/>
+					</div>
+					<div class="slide">
+						<img
+							src="https://images.unsplash.com/photo-1578041262130-633307b3bfd6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+						/>
 					</div>
 				</div>
-				<div class="boxItem">
-					<div class="container">
-						<div class="item">
-							<div>
-								<img src="assets/images/teacher.svg" />
-							</div>
-							<div>
-								<h1>10</h1>
-								<p>Professores</p>
-							</div>
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				<div class="dot-container">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+					<span class="dot" onclick="currentSlide(4)"></span>
+				</div>
+			</div>
+			<div class="boxItem">
+				<div class="containerr">
+					<div class="item">
+						<div>
+							<img src="assets/images/teacher.svg" />
 						</div>
-						<div class="item">
-							<div>
-								<img src="assets/images/clock.svg" />
-							</div>
-							<div>
-								<h1>36</h1>
-								<p>Horas de Treino</p>
-							</div>
+						<div>
+							<h1>10</h1>
+							<p>Professores</p>
 						</div>
-						<div class="item">
-							<div>
-								<img src="assets/images/car.svg" />
-							</div>
-							<div>
-								<h1>+50</h1>
-								<p>Anos de Trabalho</p>
-							</div>
+					</div>
+					<div class="item">
+						<div>
+							<img src="assets/images/clock.svg" />
 						</div>
-						<div class="item">
-							<div>
-								<img src="assets/images/id.svg" />
-							</div>
-							<div>
-								<h1>+10.000</h1>
-								<p>Aprovados</p>
-							</div>
+						<div>
+							<h1>36</h1>
+							<p>Horas de Treino</p>
+						</div>
+					</div>
+					<div class="item">
+						<div>
+							<img src="assets/images/car.svg" />
+						</div>
+						<div>
+							<h1>+50</h1>
+							<p>Anos de Trabalho</p>
+						</div>
+					</div>
+					<div class="item">
+						<div>
+							<img src="assets/images/id.svg" />
+						</div>
+						<div>
+							<h1>+10.000</h1>
+							<p>Aprovados</p>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
 
-			<div id="programa">
-				<div class="titlePrograma">
+		<div id="programa">
+			<div class="titlePrograma">
+				<h1>
+					N o s s o <br />
+					P r o g r a m a
+				</h1>
+			</div>
+
+			<div class="expandingCards">
+				<div id="panel-1" class="panel active"></div>
+				<div id="panel-2" class="panel"></div>
+				<div id="panel-3" class="panel"></div>
+				<div id="panel-4" class="panel"></div>
+				<div id="panel-5" class="panel"></div>
+				<div id="panel-6" class="panel"></div>
+			</div>
+		</div>
+
+		<div id="quemSomos">
+			<div class="containerQs-left">
+				<div class="titleQuemsomos">
 					<h1>
-						N o s s o <br />
-						P r o g r a m a
+						Q u e m <br />
+						S o m o s
 					</h1>
 				</div>
-
-				<div class="expandingCards">
-					<div id="panel-1" class="panel active"></div>
-					<div id="panel-2" class="panel"></div>
-					<div id="panel-3" class="panel"></div>
-					<div id="panel-4" class="panel"></div>
-					<div id="panel-5" class="panel"></div>
-					<div id="panel-6" class="panel"></div>
+				<p class="textQuemsomos">
+					O Centro de Formação de Condutores Vila Santo Antônio fica localizado
+					na Avenida Duque de Caxias há mais de 50 anos, formando excelentes
+					condutores de todas as categorias. Entendemos que aprender a dirigir
+					não é barato, muitas autoescolas aproveitam isso e cobram uma quantia
+					maior do que o necessário; não nós.
+				</p>
+				<div class="losangos">
+					<div class="losango">
+						<img src="assets/images/training.svg" />
+						<h2>
+							Instrutores <br />
+							experiêntes
+						</h2>
+						<p>
+							Todos os nossos instrutores são licenciados pelo DMV, mentalmente
+							e fisicamente aptos e têm uma década ou mais de histórico de
+							instrução.
+						</p>
+					</div>
+					<div class="losango">
+						<img src="assets/images/creditcard.svg" />
+						<h2>
+							Planos de <br />
+							pagamentos
+						</h2>
+						<p>
+							Nós permitimos que você decida quando e como deseja pagar.
+							Aceitamos todas as principais formas de pagamentos.
+						</p>
+					</div>
+					<div class="losango">
+						<img src="assets/images/shield.svg" />
+						<h2>Melhores medidas de segurança</h2>
+						<p>
+							Nossos instrutores são altamente treinados nas mais recentes
+							técnicas e regras de segurança da estrada.
+						</p>
+					</div>
 				</div>
 			</div>
 
-			<div id="quemSomos">
-				<div class="containerQs-left">
-					<div class="titleQuemsomos">
-						<h1>
-							Q u e m <br />
-							S o m o s
-						</h1>
-					</div>
-					<p class="textQuemsomos">
-						O Centro de Formação de Condutores Vila Santo Antônio fica
-						localizado na Avenida Duque de Caxias há mais de 50 anos, formando
-						excelentes condutores de todas as categorias. Entendemos que
-						aprender a dirigir não é barato, muitas autoescolas aproveitam isso
-						e cobram uma quantia maior do que o necessário; não nós.
-					</p>
-					<div class="losangos">
-						<div class="losango">
-							<img src="assets/images/training.svg" />
-							<h2>
-								Instrutores <br />
-								experiêntes
-							</h2>
-							<p>
-								Todos os nossos instrutores são licenciados pelo DMV,
-								mentalmente e fisicamente aptos e têm uma década ou mais de
-								histórico de instrução.
-							</p>
-						</div>
-						<div class="losango">
-							<img src="assets/images/creditcard.svg" />
-							<h2>
-								Planos de <br />
-								pagamentos
-							</h2>
-							<p>
-								Nós permitimos que você decida quando e como deseja pagar.
-								Aceitamos todas as principais formas de pagamentos.
-							</p>
-						</div>
-						<div class="losango">
-							<img src="assets/images/shield.svg" />
-							<h2>Melhores medidas de segurança</h2>
-							<p>
-								Nossos instrutores são altamente treinados nas mais recentes
-								técnicas e regras de segurança da estrada.
-							</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="containerQs-right">
-					<img src="assets/images/bannerQS.svg" />
-				</div>
+			<div class="containerQs-right">
+				<img src="assets/images/bannerQS.svg" />
 			</div>
+		</div>
 
-			<div id="contato">
-				<div class="containerContato-left">
-					<img src="assets/images/logo.svg" />
-					<div class="faleConosco">
-						<ul>
-							<li>
-								Dúvidas?
-								<img src="assets/images/support.svg" />
-							</li>
-							<li>Fale conosco!</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="contatosBottom">
+		<div id="contato">
+			<div class="containerContato-left">
+				<img src="assets/images/logo.svg" />
+				<div class="faleConosco">
 					<ul>
 						<li>
-							<img src="assets/images/whatsapp.svg" />
-							21 99999-9999
+							Dúvidas?
+							<img src="assets/images/support.svg" />
 						</li>
-						<li>
-							<img src="assets/images/phone.svg" />
-							21 2772-4214
-						</li>
-						<li>
-							<img src="assets/images/email.svg" />
-							autoescolavsa@gmail.com
-						</li>
+						<li>Fale conosco!</li>
 					</ul>
 				</div>
-
-				<div class="atendimento">
-					<p>
-						Atendimento: <br />
-						(De segunda à sexta-feira das 08h00 às 19h00 <br />
-						sábados das 08h00 às 17h00)
-					</p>
-				</div>
 			</div>
 
-			<div id="footer">
+			<div class="contatosBottom">
+				<ul>
+					<li>
+						<img src="assets/images/whatsapp.svg" />
+						21 99999-9999
+					</li>
+					<li>
+						<img src="assets/images/phone.svg" />
+						21 2772-4214
+					</li>
+					<li>
+						<img src="assets/images/email.svg" />
+						autoescolavsa@gmail.com
+					</li>
+				</ul>
+			</div>
+
+			<div class="atendimento">
 				<p>
-					© 2022 Autoescola Vila Santo Antônio. Todos os direitos reservados.
+					Atendimento: <br />
+					(De segunda à sexta-feira das 08h00 às 19h00 <br />
+					sábados das 08h00 às 17h00)
 				</p>
 			</div>
-
-			<div id="floatButton">
-				<a href="https://api.whatsapp.com/send?phone=5521971515281&text=Ol%C3%A1%2C%20gostaria%20de%20receber%20informa%C3%A7%C3%B5es!" class="floatButtomWhatsApp" >
-					<i class="fa fa-whatsapp floatWhatsApp"></i>
-				</a>
-
-				<a href="#header" class="floatArrow">
-					<i class="fa fa-arrow-up floatButtomArrow"></i>
-				</a>
-			</div>
-
 		</div>
+
+		<div id="footer">
+			<p>© 2022 Autoescola Vila Santo Antônio. Todos os direitos reservados.</p>
+		</div>
+
+		<div id="floatButton">
+			<a
+				href="https://api.whatsapp.com/send?phone=5521971515281&text=Ol%C3%A1%2C%20gostaria%20de%20receber%20informa%C3%A7%C3%B5es!"
+				class="floatButtomWhatsApp"
+			>
+				<i class="fa fa-whatsapp floatWhatsApp"></i>
+			</a>
+
+			<a href="#header" class="floatArrow">
+				<i class="fa fa-arrow-up floatButtomArrow"></i>
+			</a>
+		</div>
+
 		<script src="js/main.js"></script>
 	</body>
 </html>
